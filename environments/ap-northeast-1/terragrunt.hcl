@@ -6,7 +6,8 @@ remote_state {
   }
 
   config = {
-    bucket  = "courses-terraform-terragrunt-states-bucket"
+    # Please Give it a unique BUCKET NAME!!.
+    bucket  = "courses-terraform-terragrunt-states-bucket-mamushi"
     key     = "ap-northeast-1/${path_relative_to_include()}/terraform.tfvars"
     region  = "ap-northeast-1"
     encrypt = false
