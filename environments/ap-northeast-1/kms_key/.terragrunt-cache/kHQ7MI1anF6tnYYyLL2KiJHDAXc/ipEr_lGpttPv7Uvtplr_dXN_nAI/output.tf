@@ -4,5 +4,5 @@ output alias {
 
 
 output id {
-  value = concat(aws_kms_key.this.*.id, [""][0])
+  value = concat(aws_kms_key.this.*.id, [""])[0]
 }
